@@ -40,7 +40,7 @@ Lo que hemos hecho usando esto es:
 
 Para probar el pleno funcionamiento del DNS de Reenvío, debemos usar el sniffer **WireShark**.
 
-Como podemos observar en la siguiente imagen, el DNS de Reenvío, funciona correctamente, ya que, un cliente ha hecho una solicitud para que le den la IP de www.github.com . Nuestro servidor, como lo sabe, lo que ha hecho es reenviar la solicitud a las IPs que le hemos establecido en _forwarders { 1.1.1.1; 8.8.8.8; };__
+Como podemos observar en la siguiente imagen, el DNS de Reenvío, funciona correctamente, ya que, un cliente ha hecho una solicitud para que le den la IP de www.github.com . Nuestro servidor, como lo sabe, lo que ha hecho es reenviar la solicitud a las IPs que le hemos establecido en: _forwarders { 1.1.1.1; 8.8.8.8; };_
 
 ![madre mia, ya no va de nuevo esto](Imagenes/lag_reenvio.PNG)
 Por lo tanto, nuestro servidor DNS de Reenvío está funcionando correctamente, ya que, nos responde a las peticiones que hace el cliente y en vez de buscar recursivamente, se las manda a otra IP.
