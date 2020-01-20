@@ -22,7 +22,7 @@ Ahora, si el PC3 quiere ir a: www.youtube.com nuestro servidor DNS, tendría que
 
 Un servidor DNS de Solo Caché, es muy parecido al servidor de reenvío, este servidor tampoco tiene zonas maestras configuradas, cuando un cliente le pregunta por una solicitud DNS, primero revisa su caché, es decir, como un bloc de notas que contiene IP a nombres y viceversa, si en la caché está la respuesta de la solicitud, simplemente le responde al cliente con la respuesta, en el caso que no lo esté, realizará una consulta recursiva y el registro se guardará en la caché por un tiempo limitado, por si otro cliente quiere hacer la misma pregunta, al menos estará en la caché y no tendrá que hacer otra consulta recursiva.
 
-Si observamos la siguiente imagen, el PC_B quiere entrar a: www.github.com, creará una consulta, ya que no sabe cual es la IP de esa página web, así que se la preguntará al servidor DNS.
+Si observamos la siguiente imagen, el PC_B quiere entrar a: www.github.com, creará una consulta, ya que, no sabe cual es la IP de esa página web, así que se la preguntará al servidor DNS.
 ![Esto merece una matrícula](Imagenes/Caché/1.png)
 
 Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a la respuesta, es decir, no ha encontrado el registro de: www.github.com así que, realizará una consulta recursiva a los servidores raíz para que nos de la respuesta correcta.
@@ -31,7 +31,7 @@ Nuestro servidor DNS buscará en su caché, pero no ha encontrado la solución a
 El servidor raíz nos contestará a la consulta que ha realizado nuestro DNS, la anotará en su caché temporalmente y le responderá al cliente.
 ![Esto merece una matrícula](Imagenes/Caché/3.png)
 
-Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una consulta a nuestro servidor DNS, con la misma dirección que el cliente anterior (www.github.com), no hace falta repetir todo el proceso, ya que, nuestro DNS ha almacenado la respuesta y se la mandará al segundo cliente.
+Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una consulta a nuestro servidor DNS, con la misma dirección que el cliente anterior (www.github.com), no hace falta repetir todo el proceso, ya que, nuestro DNS ha almacenado la respuesta en la caché y se la mandará al segundo cliente.
 ![Esto merece una matrícula](Imagenes/Caché/final.png)
 
 ----
