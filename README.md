@@ -32,6 +32,7 @@ El servidor raíz nos contestará a la consulta que ha realizado nuestro DNS, la
 ![Esto merece una matrícula](Imagenes/Caché/3.png)
 
 Ahora, si en un corto periodo de tiempo, otro cliente (PC_E), vuelve a hacer una consulta a nuestro servidor DNS, con la misma dirección que el cliente anterior (www.github.com), no hace falta repetir todo el proceso, ya que, nuestro DNS ha almacenado la respuesta en la caché y se la mandará al segundo cliente.
+
 ![Esto merece una matrícula](Imagenes/Caché/final.png)
 
 ----
