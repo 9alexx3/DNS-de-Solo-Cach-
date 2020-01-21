@@ -52,7 +52,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
   
   7.- Por último paso, reiniciamos el servicio de Bind9 para comprobar que todo funcione y se apliquen los cambios realizados.
  
- ![Me deprimo si me suspendes](Imagenes/Caché/reinicio.PNG)
+ ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/reinicio.PNG)
   
   ## Comprobar funcionamiento del DNS Solo Caché.
 
