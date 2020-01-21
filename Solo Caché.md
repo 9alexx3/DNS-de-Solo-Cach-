@@ -12,7 +12,7 @@ En esta práctica, tiene como objetivo enseñar al alumnado la configuración de
 
 2.- Daremos click en **"Root Zone"**, en el apartado de <**Existing DNS Zones**>.
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/-1.PNG)
-3.- Y daremos al botón "**Re-Download Root Nameservers**", una vez dado procederemos a ir a la página por defecto que da Bind9
+3.- Y daremos al botón "**Re-Download Root Nameservers**", una vez dado procederemos a ir a la página por defecto que da Bind9.
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/0.PNG)
 2.- Luego, vamos a "**Forwarding and Transfers**".
 ![Me deprimo si me suspendes](Imagenes/Caché/Configuración/Forward.PNG)
